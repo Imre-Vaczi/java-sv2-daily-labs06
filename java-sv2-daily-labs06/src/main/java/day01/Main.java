@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         PositiveNumberContainer positiveNumberContainer = new PositiveNumberContainer();
         Scanner scanner = new Scanner(System.in);
-        while (true) {
+        /*while (true) {
             System.out.println("Szám hozzáadása a listához: ");
             double input = Double.parseDouble(scanner.nextLine());
             if (input <= 0) {
@@ -15,6 +15,12 @@ public class Main {
             }else{
                 positiveNumberContainer.add(input);
             }
+        }*/
+        double input;
+        System.out.println("Szám hozzáadása a listához: ");
+        while ((input = scanner.nextDouble()) >= 0) {
+            positiveNumberContainer.add(input);
         }
+        System.out.println(positiveNumberContainer.getNumList());
     }
 }
