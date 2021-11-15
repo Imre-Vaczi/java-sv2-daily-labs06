@@ -9,7 +9,7 @@ public class Main {
         while (true) {
             System.out.println("Szám hozzáadása a listához: ");
             double input = Double.parseDouble(scanner.nextLine());
-            if (input < 0) {
+            if (input <= 0) {
                 System.out.println(positiveNumberContainer.getNumList());
                 break;
             }else{
